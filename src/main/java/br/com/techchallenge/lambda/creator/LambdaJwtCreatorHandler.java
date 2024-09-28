@@ -76,7 +76,7 @@ public class LambdaJwtCreatorHandler implements RequestHandler<Map<String,String
 
             String sql = """
                     SELECT c.id, c.cpf, c.nome
-                    FROM cliente c
+                    FROM clientes c
                     WHERE c.cpf = :cpf
                     """;
 
